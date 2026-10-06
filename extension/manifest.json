@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Weft",
+  "version": "1.0.0",
+  "description": "See what clothes are really made of. Labels every product with its fabric and filters for 100% cotton, linen, wool, natural fibers, no polyester and more.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Weft: check fabrics on this page (Alt+Shift+C)",
+    "default_icon": {
+      "16": "icons/weft-16.png",
+      "32": "icons/weft-32.png",
+      "48": "icons/weft-48.png"
+    }
+  },
+  "icons": {
+    "16": "icons/weft-16.png",
+    "32": "icons/weft-32.png",
+    "48": "icons/weft-48.png",
+    "128": "icons/weft-128.png"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+C"
+      },
+      "description": "Open Weft on this page"
+    }
+  },
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ]
+}
